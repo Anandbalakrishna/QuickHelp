@@ -62,18 +62,17 @@
       margin-bottom: var(--space-10x);
       border-radius: var(--radius-default);
       overflow: hidden;
+      position: relative;
     }
-    .title-row {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      gap: var(--space-8x);
-    }
-    .title-text { flex: 1; }
     .title-text h1 { font-size: 42px; font-weight: 700; margin-bottom: var(--space-2x); letter-spacing: -0.3px; }
     .title-text .subtitle { font-size: 18px; color: var(--orange-60); font-weight: 500; margin-bottom: var(--space-4x); }
     .title-text .meta { font-size: 12px; color: var(--text-secondary); text-transform: uppercase; letter-spacing: 0.3px; }
-    .title-logo img { height: 120px; width: auto; }
+    .title-logo {
+      position: absolute;
+      bottom: var(--space-6x);
+      right: var(--space-6x);
+    }
+    .title-logo img { height: 100px; width: auto; }
 
     section { margin-bottom: var(--space-12x); }
     .section-header { display: flex; align-items: center; gap: var(--space-4x); margin-bottom: var(--space-2x); }
@@ -186,16 +185,14 @@
         <img src="perlab-logo.svg" alt="PERLab">
       </div>
       <div class="title-content">
-        <div class="title-row">
-          <div class="title-text">
-            <h1>The Auxi Playbook</h1>
-            <p class="subtitle">High-Impact, Low-Effort Wins for Consultants</p>
-            <p class="meta">Self Help Guide</p>
-          </div>
-          <div class="title-logo">
-            <img src="kearney-logo.gif" alt="Kearney">
-          </div>
+        <div class="title-text">
+          <h1>The Auxi Playbook</h1>
+          <p class="subtitle">High-Impact, Low-Effort Wins for Consultants</p>
+          <p class="meta">Self Help Guide</p>
         </div>
+      </div>
+      <div class="title-logo">
+        <img src="kearney-logo.gif" alt="Kearney">
       </div>
     </div>
 
